@@ -26,6 +26,7 @@ namespace LogExceptions_CustomMiddleware.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            throw new Exception("Custom Exception");
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
