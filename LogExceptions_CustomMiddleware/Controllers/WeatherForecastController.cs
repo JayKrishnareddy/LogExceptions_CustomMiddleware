@@ -24,6 +24,7 @@ namespace LogExceptions_CustomMiddleware.Controllers
         }
 
         [HttpGet]
+        // Log Custom Exceptions using Custom Middleware in .Net 5.0 Web API's
         public IEnumerable<WeatherForecast> Get()
         {
             throw new Exception("Custom Exception for log the exceptions to Database Table");
